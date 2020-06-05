@@ -15,4 +15,4 @@ steps:
       - git clone --depth=1 https://git.alpinelinux.org/aports/
       - apk add abuild apk-tools alpine-conf busybox fakeroot mtools grub-efi
       - cd aports/scripts
-      - APORTS="" sh mkimage.sh
+      - sh mkimage.sh --profile minirootfs --repository http://dl-cdn.alpinelinux.org/alpine/edge/
